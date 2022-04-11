@@ -253,18 +253,18 @@
 
 
 .slide{
-	width: 70vw;
-	height:80vh;
-	margin: auto;
-	object-fit: contain;
-	padding: 10%;
+	width: 90vw;
+	height:calc(9/16*90vw);
+	margin: 7em auto 2em;
 	animation-name: slides;
 	animation-duration: 25s;
 	animation-delay: 0.5s;
 	animation-iteration-count: infinite;background-repeat: no-repeat;
-	
+	background-size: cover;
+	background-position: center;
 	
 }
+
 
 @keyframes slides{
 	
@@ -346,6 +346,9 @@ button{
 	button a {
 	text-decoration: none;
 	}
+			
+			body{
+				font-family:Poppins;}
 	
 	</style>	
 	</head>
@@ -359,7 +362,7 @@ button{
 	</div>
 <br><br>
 		<form>
-<input type="search" value="Search for products"/>
+<input type="search" placeholder="Search for products"/>
 </form>
 <br><br>
 <div class=" products">
