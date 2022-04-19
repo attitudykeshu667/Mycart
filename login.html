@@ -1,83 +1,94 @@
-<!doctype html>
-	<!DOCTYPE html>
-	<html>
-	<head>
-		
-		<title>Form</title>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
 
-		<style>
-			*{
-                margin:0;
-				padding: 0;
-			}
-			
-body{
-	background-color: skyblue;
-}
-form{
-	margin: auto;
-    margin-top: 7% ;
-	padding: 5%;
-	text-align: center;
-	border: 2px solid grey;
-	background-color: white;
-	width: 65vw;
-	box-shadow: 2px 2px 5px 2px black;
-}
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-form input {
-	margin-top: 2%;
-	width: 90%;
-	height: 5vh;
+      body {
+        background-color: skyblue;
+      }
+      form {
+        margin: auto;
+        margin-top: 7%;
+        padding: 5%;
+        text-align: center;
+        border: 2px solid grey;
+        background-color: white;
+        width: 65vw;
+        box-shadow: 2px 2px 5px 2px black;
+      }
 
-
-}
-form h1{
+      form input {
+        margin-top: 2%;
+        width: 90%;
+        height: 5vh;
+      }
+      form h1 {
         color: skyblue;
         margin-bottom: 5%;
+      }
+      button {
+        background-color: skyblue;
+        margin: 5%;
+        width: 25%;
+        height: 5vh;
+        border-radius: 3vw;
+      }
+      form button:hover {
+        background-color: tomato;
+      }
 
+      h4 {
+        color: skyblue;
+      }
+      p {
+        color: green;
+      }
+      h4 :hover {
+        color: tomato;
+      }
 
-}
-button{
-	background-color: skyblue;
-	margin: 5%;
-	width: 25%;
-	height: 5vh;
-    border-radius:3vw;
-	
+      .home {
+        margin-top: 1.5em;
+        margin-left: 1.5em;
+        border-radius: 50px;
+        border: 2px solid gray;
+        background-color: white;
+        padding: 0.5em 1em;
+        display: inline-block;
+      }
 
+      .home a {
+        font-family: Poppins;
+        text-decoration: none;
+        font-weight: bold;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="home">
+      <a href="index.html">Back</a>
+    </div>
+    <form>
+      <h1>Login to Your Account</h1>
 
-}
- form button:hover{
-	background-color: tomato;
-}
-
-
-h4{
-	color: skyblue;
-}
-p{
-	color: green;
-}
- h4  :hover{color: tomato;
- 	
-
-		</style>
-	</head>
-	<body>
-	
-
-	<form>
-		<h1> Login to Your Account</h1>
-	
-	<input type=" text" value="Username"><br><br>
-    <input type=" password" value="Password"><br><br>
-    <button class="submit" name="Login"> Login</button>
-     <h4> Already have an  account? <p>Sign up</p> </h4>
-
-	</form>
-
-
-
-	</body>
-	</html>
+      <input type=" text" placeholder="Username" />
+      <br /><br />
+      <input type=" password" placeholder="Password" />
+      <br /><br />
+      <button class="submit" name="Login">Login</button>
+      <h4>
+        Already have an account?
+        <p>Sign up</p>
+      </h4>
+    </form>
+  </body>
+</html>
